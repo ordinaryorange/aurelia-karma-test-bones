@@ -13,7 +13,7 @@ module.exports = function(config) {
     },
     
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: 'tests',
 
 
     // frameworks to use
@@ -32,7 +32,7 @@ module.exports = function(config) {
       
     ],
 
-    webpack: webpackConfig,
+    webpack: webpackConfig(),
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor

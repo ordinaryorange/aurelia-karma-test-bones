@@ -1,10 +1,10 @@
+const { AureliaPlugin } = require('aurelia-webpack-plugin');
 
-
-module.exports = () => {
-    return [{
+module.exports = {
+      //entry:'test1.spec.ts',
       resolve:{
         extensions: ['.ts', '.js'],
-        modules: ['node_modules'],
+        modules: ['tests', 'node_modules'],
       },
       module:{
         rules: [
@@ -12,8 +12,8 @@ module.exports = () => {
         ]
       },
       plugins:[ 
-        new AureliaPlugin(),
+        //need {aureliaApp:undefined} as we have only a basic test project wihtout any main app
+        new AureliaPlugin({aureliaApp:undefined}), 
         ]
-      }];
   };
   
