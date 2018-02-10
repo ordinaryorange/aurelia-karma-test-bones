@@ -1,6 +1,6 @@
 import "aurelia-polyfills";
 import { bootstrap,  starting } from "aurelia-bootstrapper";
-import { Container, PLATFORM } from "aurelia-framework";
+import { Container, PLATFORM, Expression } from "aurelia-framework";
 import {StageComponent} from "aurelia-testing";
 
 
@@ -13,4 +13,9 @@ describe("aspiration", () => {
         await component.create(bootstrap);
         expect(true).toBeTruthy();
     });
+
+    it("proves that the tests run", () => {
+        expect(true).toBeTruthy();
+    } )
 });
+

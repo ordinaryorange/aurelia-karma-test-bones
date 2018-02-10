@@ -1,7 +1,7 @@
 const { AureliaPlugin } = require('aurelia-webpack-plugin');
 
 module.exports = {
-      //entry:'test1.spec.ts',
+      entry:'test1.spec.ts',
       resolve:{
         extensions: ['.ts', '.js'],
         modules: ['tests', 'node_modules'],
