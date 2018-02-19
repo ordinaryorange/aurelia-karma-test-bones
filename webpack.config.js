@@ -1,7 +1,10 @@
 const { AureliaPlugin } = require('aurelia-webpack-plugin');
 
 module.exports = {
-      entry:'test1.spec.ts',
+      //entry: should not actually be needed as Karma should pass in the entry, but without it the error 
+      //"TypeError: request.replace is not a function" is thrown to the console
+      //Refer https://github.com/aurelia/webpack-plugin/issues/134 for more information
+      entry:'xxx',
       resolve:{
         extensions: ['.ts', '.js'],
         modules: ['tests', 'node_modules'],
