@@ -1,3 +1,4 @@
+import "aurelia-loader-webpack";
 import "aurelia-polyfills";
 import { bootstrap,  starting } from "aurelia-bootstrapper";
 import { Container, PLATFORM, Expression } from "aurelia-framework";
@@ -16,6 +17,10 @@ describe("aspiration", () => {
 
     it("proves that the tests run", () => {
         expect(true).toBeTruthy();
-    } )
+    })
+
+    it("fails the bad test too", () => {
+        expect(false).toBeTruthy();
+    })
 });
 
